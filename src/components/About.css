@@ -1,0 +1,86 @@
+.about-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.about-image {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+}
+
+.portrait-placeholder {
+    width: 100%;
+    padding-bottom: 125%;
+    /* 4:5 aspect ratio */
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portrait-placeholder::after {
+    content: 'Portrait';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+    font-weight: 600;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.about-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    color: var(--color-primary);
+}
+
+.about-name-en {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+}
+
+.about-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.about-actions {
+    margin-top: 30px;
+}
